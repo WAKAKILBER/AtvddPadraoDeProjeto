@@ -9,8 +9,8 @@ class Veiculo {
 
     private Veiculo(ConstrutorVeiculo construtor) {
         this.modelo = construtor.modelo;
-        this.direcaoHidraulica = true;  // Obrigatório
-        this.vidroEletrico = true;      // Obrigatório
+        this.direcaoHidraulica = true; 
+        this.vidroEletrico = true;     
         this.sistemaSom = construtor.sistemaSom;
         this.tetoSolar = construtor.tetoSolar;
         this.arCondicionado = construtor.arCondicionado;
