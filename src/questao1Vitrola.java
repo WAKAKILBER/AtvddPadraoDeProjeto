@@ -1,3 +1,7 @@
+
+//O adapatador esta recebendo um Objeto generico
+//não esta fazendo nenhum tipo de adaptação
+
 abstract class DispositivoAudio {
     public abstract void reproduzir();
 }
@@ -37,5 +41,20 @@ public class questao1Vitrola {
         SistemaAudio sistemaVinil = new AdaptadorAudio(tocaVinil);
         sistemaCD.reproduzirAudio();
         sistemaVinil.reproduzirAudio();
+
+         //Deveria ser algo como isso:
+            // public class AdapterCDtoVinil extends Vitrola {
+        //     public String adapta(CD cd){
+        //         return cd.conecta() + getConector();
+        //     }
+        // }
+
+
+       // CD cd = new CD("Scorpions");
+
+       // AdapterCDtoVinil adapter = new AdapterCDtoVinil();
+
+        //System.out.println(adapter.adapta(cd));
+
     }
 }
